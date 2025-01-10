@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JASJ OS</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: linear-gradient(to bottom, #2c3e50, #bdc3c7);
+            overflow: hidden;
+        }
+        
+        .title {
+            font-family: 'Play', sans-serif;
+            font-size: 3em;
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+        }
+        
+        .wallpaper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: calc(100% - 100px);
+        }
+        
+        .icon {
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .spinner {
+            border: 16px solid #f3f3f3;
+            border-top: 16px solid #3498db;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">JASJ OS</div>
+    <div id="spinner" class="spinner"></div>
+    <div id="wallpaper" class="wallpaper hidden">
+        <!-- Placeholder for 21 apps -->
+        <div class="icon">JASJ Calculator</div>
+        <div class="icon">JASJ Clock</div>
+        <div class="icon">JASJ Calendar</div>
+        <div class="icon">JASJ Camera</div>
+        <div class="icon">JASJ Contacts</div>
+        <div class="icon">JASJ Email</div>
+        <div class="icon">JASJ Files</div>
+        <div class="icon">JASJ Gallery</div>
+        <div class="icon">JASJ Maps</div>
+        <div class="icon">JASJ Messages</div>
+        <div class="icon">JASJ Music</div>
+        <div class="icon">JASJ Notes</div>
+        <div class="icon">JASJ Phone</div>
+        <div class="icon">JASJ Settings</div>
+        <div class="icon">JASJ Store</div>
+        <div class="icon">JASJ Video</div>
+        <div class="icon">JASJ Weather</div>
+        <div class="icon">JASJ Browser</div>
+        <div class="icon">JASJ Games</div>
+        <div class="icon">JASJ Social</div>
+        <div class="icon">JASJ Utilities</div>
+        <!-- Placeholder for 11 games -->
+        <div class="icon">JASJ Racer</div>
+        <div class="icon">JASJ Blaster</div>
+        <div class="icon">JASJ Puzzle</div>
+        <div class="icon">JASJ Quest</div>
+        <div class="icon">JASJ Arena</div>
+        <div class="icon">JASJ Tower</div>
+        <div class="icon">JASJ Maze</div>
+        <div class="icon">JASJ Escape</div>
+        <div class="icon">JASJ Monster</div>
+        <div class="icon">JASJ Battle</div>
+        <div class="icon">JASJ Legends</div>
+    </div>
+
+    <script>
+        // Simulate loading time
+        setTimeout(() => {
+            document.getElementById('spinner').classList.add('hidden');
+            document.getElementById('wallpaper').classList.remove('hidden');
+        }, 3000); // 3 seconds loading time
+    </script>
+</body>
+</html>
